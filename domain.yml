@@ -1,0 +1,104 @@
+
+actions:
+  - utter_greet
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_happy
+  - utter_goodbye
+  - utter_iamabot
+  - utter_bookroom
+  - utter_selected_firstchoice
+  - utter_selected_secondchoice
+  - utter_selected_thirdchoice
+  - utter_cleanroom
+  - utter_cleanroom2
+  - utter_schedual_cleanroom
+  - utter_timing_of_cleaning
+  - utter_breakfast
+  - utter_faqs1
+  - utter_faqs2
+  - utter_faqs3
+  - utter_faqs4
+  - utter_faqs5
+  - utter_faqs6
+  - utter_faqs7
+  - utter_faqs8
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_unhappy
+  - bot_challenge
+  - book_room
+  - choice_of_room1
+  - choice_of_room2
+  - choice_of_room3
+  - cleanroom
+  - cleanroom2
+  - schedual_cleanroom
+  - timing_of_cleaning
+  - breakfast
+  - FAQS1
+  - FAQS2
+  - FAQS3
+  - FAQS4
+  - FAQS5
+  - FAQS6
+  - FAQS7
+  - FAQS8
+responses:
+  utter_bookroom:
+    - text: "which type of room you would like to book? choice 1 = delux room choice 2 = average room choice 3 = affordable room"
+  utter_breakfast:
+    - text: "yes, this hotel provide breakfast to their customer and the timing is 9A.M to 11 A.M"
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_cleanroom:
+    - text: "when should i arrange for cleaning?"
+  utter_cleanroom2:
+    - text: "sure i am sending someone to your room now"
+  utter_did_that_help:
+    - text: "Did that help you?"
+  utter_faqs1:
+    - text: "check-in time is 11 A.M(total 11 hours from today 11 A.M to tomorrow 10 A.M)"
+  utter_faqs2:
+    - text: "check-out time is 10 A.M"
+  utter_faqs3:
+    - text: "yes,this hotel provide resturant , cafe and also a bar which are very famous in the country."
+  utter_faqs4:
+    - text: "here it is(lunch menu)"
+      image: "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/menu-poster-template-c4b2a46b31cb0acba3ea7cc619a72b17_screen.jpg?ts=1561491234"
+  utter_faqs5:
+    - text: "here it is(dinner menu)"
+      image: "https://kopywritingkourse.com/wp-content/uploads/TGI-Fridays.jpg"
+  utter_faqs6:
+    - text: "the below image contain all the cuisines which are serve in the resturant and hotel"
+      image: "https://www.mapsofindia.com/maps/india/indian-cuisine-2020-map.jpg"
+  utter_faqs7:
+    - text: "if you want to cancel reservation then call on this number before 10 days of arrival 1800-88-99-78-321 and you will get your full refund
+             but if you will fail to cancel before 10 days of arrival then from your money our hotel will cut 40%"
+  utter_faqs8:
+    - text: "yes, our resturant has one of the best bar in the state"
+  utter_goodbye:
+    - text: "Bye,have a good day"
+  utter_greet:
+    - text: "Hey! How are you?How can i help you?"
+  utter_happy:
+    - text: "Great, carry on!"
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+  utter_schedual_cleanroom:
+    - text: "when you would like to clean your room?"
+  utter_selected_firstchoice_delux:
+    - text: "you have selected first choice,which is delux  and do you want to clean your room?"
+  utter_selected_secondchoice_average:
+    - text: "you have selected second choice,which is average room and do you want to clean your room?"
+  utter_selected_thirdchoice_affordable:
+    - text: "you have selected third choice,which is affordable room and do you want to clean your room?"
+  utter_timing_of_cleaning:
+    - text: "sure sir, i will schedualed it as per your timing"
+session_config:
+  carry_over_slots_to_new_session: true
+  session_expiration_time: 60
